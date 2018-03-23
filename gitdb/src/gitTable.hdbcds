@@ -2,14 +2,11 @@ namespace testGit.gitdb;
 
 context gitTable {
     entity MODULE {
-        key MODULE_ID     : String(10) not null;
+        key MODULE_ID     : String(20) not null;
             MODULE_NAME   : String(60) not null;
             TO_SUB_MODULE : association[0..*] to SUB_MODULE on TO_SUB_MODULE.MODULE_ID = MODULE_ID; /*OUT*/
             TO_ACTIVITY   : association[0..*] to ACTIVITY   on TO_ACTIVITY.MODULE_ID = MODULE_ID; /*OUT*/
     };
 };
-<<<<<<< HEAD
 //Test from ACLOW
-=======
 //Test from XSA_DEV
->>>>>>> refs/heads/master
