@@ -2,3 +2,19 @@ ID: testGit
 _schema-version: '2.0'
 description: testGit
 version: 0.0.1
+
+modules:
+ - name: gitdb
+   type: hdb
+   path: gitdb
+   requires:
+    - name: hdi_gitdb
+
+resources:
+ - name: hdi_gitdb
+   parameters:
+      config:
+         schema: gitdb
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
