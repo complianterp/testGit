@@ -8,3 +8,4 @@ context gitTable {
             TO_ACTIVITY   : association[0..*] to ACTIVITY   on TO_ACTIVITY.MODULE_ID = MODULE_ID; /*OUT*/
     };
 };
+//Test from XSA_DEV
