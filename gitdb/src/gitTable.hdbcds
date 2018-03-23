@@ -8,4 +8,8 @@ context gitTable {
             TO_ACTIVITY   : association[0..*] to ACTIVITY   on TO_ACTIVITY.MODULE_ID = MODULE_ID; /*OUT*/
     };
 };
+<<<<<<< HEAD
 //Test from ACLOW
+=======
+//Test from XSA_DEV
+>>>>>>> refs/heads/master
